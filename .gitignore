@@ -1,0 +1,3 @@
+data/ingestion/*
+code/utils/params.py
+docs/*
