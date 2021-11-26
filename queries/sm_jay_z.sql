@@ -29,7 +29,8 @@ select
 	round(s.streams * s.revenue_per_stream, 2) as 'revenue',
 	round(s.streams / cts.rows, 0) as 'streams_norm',
 	round((s.streams * s.revenue_per_stream) / cts.rows, 2) as 'revenue_norm',
-	c.*
+	c.*,
+	getdate() as 'last_update'
 from dbo.jay_z as j
 left join dbo.jay_z_streams as s on s.song = j.song
 left join counts as cts on cts.song = j.song
