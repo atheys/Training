@@ -2,5 +2,3 @@
 data/ingestion/*
 # ignore credentials
 code/utils/params.py
-# ignore docs folder
-docs/*
