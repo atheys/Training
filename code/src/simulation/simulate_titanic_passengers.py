@@ -53,4 +53,4 @@ for i in range(len(records)):
 
 df = pd.DataFrame.from_dict(data)
 df.to_sql("titanic_passengers", dwh_engine, index=False, if_exists="replace")
-df.to_csv("../../../data/csv/titanic_passengers.csv", index=False, sep=";")
+df.to_csv("../../../data/csv/titanic_passengers.csv", index=False, sep=";", decimal=",")
